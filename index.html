@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -29,6 +30,9 @@
     <section id="interface">
         <div class="navigation">
             <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
                 <div class="search">
                     <i class="far fa-search"></i>
                     <input type="text" placeholder="Search">
@@ -270,5 +274,12 @@
             </table>
         </div>
     </section>
+
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('#menu').toggleClass('active')
+        })
+    </script>
 </body>
 </html>
